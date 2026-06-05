@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>DevKit - 开发者工具</title>
+<meta name="description" content="DevKit — 62 free developer tools. Chrome extensions, web tools, and VS Code plugins. One-time purchase, no subscriptions.">
+<title>DevKit — Developer Tools Suite</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#0d1117;color:#c9d1d9;min-height:100vh}
@@ -11,85 +12,88 @@ header{background:#161b22;border-bottom:1px solid #30363d;padding:16px 24px;disp
 nav a{color:#8b949e;text-decoration:none;margin-left:16px;font-size:13px}
 nav a:hover{color:#c9d1d9}
 .hero{text-align:center;padding:60px 24px 32px}
-.hero h1{font-size:36px;margin-bottom:12px}
-.hero .stats{display:flex;justify-content:center;gap:32px;margin-top:20px;flex-wrap:wrap}
+.hero h1{font-size:40px;margin-bottom:12px;color:#f0f6fc}
+.hero p{color:#8b949e;font-size:18px;max-width:700px;margin:0 auto}
+.hero .stats{display:flex;justify-content:center;gap:40px;margin-top:28px;flex-wrap:wrap}
 .hero .stat{text-align:center}
-.hero .stat-num{font-size:32px;font-weight:700;color:#58a6ff}
-.hero .stat-label{font-size:12px;color:#8b949e;margin-top:4px}
-.section{max-width:1000px;margin:0 auto;padding:0 24px 40px}
-.section h2{font-size:20px;margin-bottom:20px;color:#f0f6fc}
+.hero .stat-num{font-size:36px;font-weight:700;color:#58a6ff}
+.hero .stat-label{font-size:13px;color:#8b949e;margin-top:4px}
+.section{max-width:1000px;margin:0 auto;padding:0 24px 48px}
+.section h2{font-size:22px;margin-bottom:20px;color:#f0f6fc}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
 .card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px;transition:border-color 0.2s;text-decoration:none;color:inherit;display:block}
 .card:hover{border-color:#58a6ff}
 .card h3{font-size:14px;margin-bottom:4px;color:#58a6ff}
 .card .emoji{font-size:20px;margin-bottom:6px}
-.card .price{font-size:18px;font-weight:700;color:#f0c040;margin:8px 0}
+.card .price{font-size:20px;font-weight:700;color:#f0c040;margin:8px 0}
 .card .price span{font-size:12px;color:#8b949e;font-weight:400}
 .card .desc{font-size:12px;color:#8b949e;line-height:1.5}
-.tool-link{font-size:13px;color:#58a6ff;text-decoration:none;padding:6px 0;display:block;border-bottom:1px solid #21262d}
-.tool-link:hover{color:#79c0ff;background:rgba(88,166,255,0.05)}
+footer{padding:24px;border-top:1px solid #21262d;text-align:center}
+footer a{color:#58a6ff;text-decoration:none;margin:0 12px;font-size:13px}
+footer a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
 <header>
   <div class="logo">🛠 <span>Dev</span>Kit</div>
   <nav>
-    <a href="/pricing">定价</a>
-    <a href="/terms">服务条款</a>
-    <a href="/privacy">隐私政策</a>
-    <a href="/refund">退款政策</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/tools.html">All Tools</a>
+    <a href="/terms">Terms</a>
+    <a href="/privacy">Privacy</a>
+    <a href="/refund">Refunds</a>
   </nav>
 </header>
 <div class="hero">
-  <h1>提升工作效率的工具套件</h1>
-  <p style="color:#8b949e;font-size:18px;">62 个开发者工具 — 9 个 Chrome 扩展 + 51 个 Web 工具 + 1 个 VS Code 扩展 + 1 个后端</p>
+  <h1>Developer Tools That Just Work</h1>
+  <p>62 free tools for developers. 9 Chrome extensions, 51 web tools, 1 VS Code plugin. One-time purchase to unlock Pro. No subscriptions.</p>
   <div class="stats">
-    <div class="stat"><div class="stat-num">62</div><div class="stat-label">工具总数</div></div>
-    <div class="stat"><div class="stat-num">9</div><div class="stat-label">Chrome 扩展</div></div>
-    <div class="stat"><div class="stat-num">51</div><div class="stat-label">Web 工具</div></div>
-    <div class="stat"><div class="stat-num">$5</div><div class="stat-label">起 永久买断</div></div>
+    <div class="stat"><div class="stat-num">62</div><div class="stat-label">Total Tools</div></div>
+    <div class="stat"><div class="stat-num">9</div><div class="stat-label">Chrome Extensions</div></div>
+    <div class="stat"><div class="stat-num">51</div><div class="stat-label">Web Tools</div></div>
+    <div class="stat"><div class="stat-num">$9.99</div><div class="stat-label">One-time Purchase</div></div>
   </div>
 </div>
 
-<div class="section" id="extensions">
-  <h2>🧩 Chrome 扩展（9个）</h2>
-  <h2>Chrome 扩展 Pro 版定价</h2>
+<div class="section">
+  <h2>🧩 Chrome Extensions — One-time purchase, lifetime access</h2>
   <div class="grid">
-    <div class="card"><div class="emoji">✏️</div><h3>AI Pen</h3><div class="price">$19.99<span> 买断</span></div><div class="desc">AI 写作助手 — 改写/翻译/总结。免费20次/天。</div></div>
-    <div class="card"><div class="emoji">🍅</div><h3>FocusPulse</h3><div class="price">$9.99<span> 买断</span></div><div class="desc">番茄钟 + 专注统计。Pro 解锁高级分析。</div></div>
-    <div class="card"><div class="emoji">⚡</div><h3>SpeedRead</h3><div class="price">$9.99<span> 买断</span></div><div class="desc">RSVP 极速阅读。Pro 解锁全部速度。</div></div>
-    <div class="card"><div class="emoji">📋</div><h3>ClipVault</h3><div class="price">$9.99<span> 买断</span></div><div class="desc">剪贴板管理器。Pro 无限历史记录。</div></div>
-    <div class="card"><div class="emoji">🦅</div><h3>PriceHawk</h3><div class="price">$19.99<span> 买断</span></div><div class="desc">电商比价助手。Pro 无限监控商品。</div></div>
-    <div class="card"><div class="emoji">🔍</div><h3>CodeLens AI</h3><div class="price">$19.99<span> 买断</span></div><div class="desc">GitHub 代码分析。Pro 私有仓库支持。</div></div>
-    <div class="card"><div class="emoji">📊</div><h3>Finance Eye</h3><div class="price">$19.99<span> 买断</span></div><div class="desc">金融行情盯盘。Pro 无限预警。</div></div>
-    <div class="card"><div class="emoji">📑</div><h3>TabFlow</h3><div class="price">免费</div><div class="desc">标签页工作区管理器。</div></div>
-    <div class="card"><div class="emoji">🎨</div><h3>ColorKit</h3><div class="price">$9.99<span> 买断</span></div><div class="desc">设计师配色工具箱。</div></div>
+    <div class="card"><div class="emoji">✏️</div><h3>AI Pen</h3><div class="price">$19.99<span> lifetime</span></div><div class="desc">AI writing assistant — rewrite, translate, summarize any text.</div></div>
+    <div class="card"><div class="emoji">🍅</div><h3>FocusPulse</h3><div class="price">$9.99<span> lifetime</span></div><div class="desc">Pomodoro timer with deep focus tracking & analytics.</div></div>
+    <div class="card"><div class="emoji">⚡</div><h3>SpeedRead</h3><div class="price">$9.99<span> lifetime</span></div><div class="desc">RSVP speed reading — read 2-5x faster without eye strain.</div></div>
+    <div class="card"><div class="emoji">📋</div><h3>ClipVault</h3><div class="price">$9.99<span> lifetime</span></div><div class="desc">Smart clipboard manager with search, pin, and history.</div></div>
+    <div class="card"><div class="emoji">🦅</div><h3>PriceHawk</h3><div class="price">$19.99<span> lifetime</span></div><div class="desc">Price tracker — monitor products, get drop alerts.</div></div>
+    <div class="card"><div class="emoji">🔍</div><h3>CodeLens AI</h3><div class="price">$19.99<span> lifetime</span></div><div class="desc">AI code analysis for GitHub — understand any repo instantly.</div></div>
+    <div class="card"><div class="emoji">📊</div><h3>Finance Eye</h3><div class="price">$19.99<span> lifetime</span></div><div class="desc">Real-time stock & forex dashboard in your browser.</div></div>
+    <div class="card"><div class="emoji">📑</div><h3>TabFlow</h3><div class="price">Free</div><div class="desc">Tab workspace manager — save, switch, restore instantly.</div></div>
+    <div class="card"><div class="emoji">🎨</div><h3>ColorKit</h3><div class="price">$9.99<span> lifetime</span></div><div class="desc">Professional color tools — palettes, gradients, converters.</div></div>
   </div>
 </div>
 
-<div class="section" id="tools">
-  <h2>🌐 在线 Web 工具（51个） — <a href="/tools.html" style="font-size:14px;font-weight:400;">查看全部 →</a></h2>
+<div class="section">
+  <h2>🌐 Web Tools — 51 free online utilities — <a href="/tools.html" style="font-size:14px;font-weight:400;">View All →</a></h2>
   <div class="grid">
-    <a class="card" href="https://479464887-rgb.github.io/json-toolkit/"><div class="emoji">📋</div><h3>JSON Toolkit</h3><div class="desc">格式化/验证/转换 JSON</div></a>
-    <a class="card" href="https://479464887-rgb.github.io/qr-generator/"><div class="emoji">📱</div><h3>QR Generator</h3><div class="desc">在线二维码生成器</div></a>
-    <a class="card" href="https://479464887-rgb.github.io/pw-generator/"><div class="emoji">🔐</div><h3>Password Generator</h3><div class="desc">强密码生成器</div></a>
-    <a class="card" href="https://479464887-rgb.github.io/base64-tool/"><div class="emoji">🔢</div><h3>Base64 Tool</h3><div class="desc">Base64 编解码</div></a>
-    <a class="card" href="https://479464887-rgb.github.io/hash-generator/"><div class="emoji">#️⃣</div><h3>Hash Generator</h3><div class="desc">MD5/SHA 哈希生成</div></a>
-    <a class="card" href="https://479464887-rgb.github.io/markdown-preview/"><div class="emoji">📝</div><h3>Markdown Preview</h3><div class="desc">Markdown 实时预览</div></a>
-    <a class="card" href="https://479464887-rgb.github.io/image-to-base64/"><div class="emoji">🖼️</div><h3>Image to Base64</h3><div class="desc">图片转 Base64 Data URI</div></a>
-    <a class="card" href="https://479464887-rgb.github.io/gradient-generator/"><div class="emoji">🌈</div><h3>Gradient Generator</h3><div class="desc">CSS 渐变生成器</div></a>
-    <a class="card" href="https://479464887-rgb.github.io/timezone-converter/"><div class="emoji">🕐</div><h3>Timezone Converter</h3><div class="desc">全球时区转换</div></a>
-    <a class="card" href="https://479464887-rgb.github.io/emoji-picker/"><div class="emoji">😀</div><h3>Emoji Picker</h3><div class="desc">Emoji 搜索复制</div></a>
-    <a class="card" href="https://479464887-rgb.github.io/yaml-to-json/"><div class="emoji">🔄</div><h3>YAML ↔ JSON</h3><div class="desc">YAML JSON 互转</div></a>
-    <a class="card" href="https://479464887-rgb.github.io/barcode-generator/"><div class="emoji">📊</div><h3>Barcode Generator</h3><div class="desc">条形码生成器</div></a>
+    <a class="card" href="https://479464887-rgb.github.io/json-toolkit/"><div class="emoji">📋</div><h3>JSON Toolkit</h3><div class="desc">Format, validate & convert JSON data</div></a>
+    <a class="card" href="https://479464887-rgb.github.io/qr-generator/"><div class="emoji">📱</div><h3>QR Generator</h3><div class="desc">Generate QR codes instantly</div></a>
+    <a class="card" href="https://479464887-rgb.github.io/pw-generator/"><div class="emoji">🔐</div><h3>Password Generator</h3><div class="desc">Generate strong, random passwords</div></a>
+    <a class="card" href="https://479464887-rgb.github.io/base64-tool/"><div class="emoji">🔢</div><h3>Base64 Tool</h3><div class="desc">Encode/decode Base64 strings</div></a>
+    <a class="card" href="https://479464887-rgb.github.io/hash-generator/"><div class="emoji">#️⃣</div><h3>Hash Generator</h3><div class="desc">MD5, SHA-1, SHA-256 hashing</div></a>
+    <a class="card" href="https://479464887-rgb.github.io/markdown-preview/"><div class="emoji">📝</div><h3>Markdown Preview</h3><div class="desc">Live Markdown editor & preview</div></a>
+    <a class="card" href="https://479464887-rgb.github.io/image-to-base64/"><div class="emoji">🖼️</div><h3>Image to Base64</h3><div class="desc">Convert images to Base64 data URIs</div></a>
+    <a class="card" href="https://479464887-rgb.github.io/gradient-generator/"><div class="emoji">🌈</div><h3>Gradient Generator</h3><div class="desc">CSS gradient visual builder</div></a>
+    <a class="card" href="https://479464887-rgb.github.io/timezone-converter/"><div class="emoji">🕐</div><h3>Timezone Converter</h3><div class="desc">Convert across 300+ timezones</div></a>
+    <a class="card" href="https://479464887-rgb.github.io/emoji-picker/"><div class="emoji">😀</div><h3>Emoji Picker</h3><div class="desc">Browse, search & copy emojis</div></a>
+    <a class="card" href="https://479464887-rgb.github.io/yaml-to-json/"><div class="emoji">🔄</div><h3>YAML ↔ JSON</h3><div class="desc">Convert between YAML and JSON</div></a>
+    <a class="card" href="https://479464887-rgb.github.io/barcode-generator/"><div class="emoji">📊</div><h3>Barcode Generator</h3><div class="desc">Generate barcodes (CODE-128, EAN-13)</div></a>
   </div>
 </div>
 
-<footer style="padding:24px;border-top:1px solid #21262d;text-align:center">
-  <a href="/terms">服务条款</a>
-  <a href="/privacy">隐私政策</a>
-  <a href="/refund">退款政策</a>
-  <a href="/tools.html">全部工具</a>
+<footer>
+  <a href="/pricing">Pricing</a>
+  <a href="/tools.html">All Tools</a>
+  <a href="/terms">Terms of Service</a>
+  <a href="/privacy">Privacy Policy</a>
+  <a href="/refund">Refund Policy</a>
   <span style="color:#484f58;margin-left:12px">© 2026 DevKit</span>
 </footer>
 </body>
